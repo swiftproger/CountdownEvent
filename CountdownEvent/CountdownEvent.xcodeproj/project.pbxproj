@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F8A55472988231C00E0460B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A55462988231C00E0460B /* AppCoordinator.swift */; };
 		1FADB93429881CD1001FDEAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FADB93329881CD1001FDEAD /* AppDelegate.swift */; };
 		1FADB93629881CD1001FDEAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FADB93529881CD1001FDEAD /* SceneDelegate.swift */; };
 		1FADB93829881CD1001FDEAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FADB93729881CD1001FDEAD /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F8A55462988231C00E0460B /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		1FADB93029881CD1001FDEAD /* CountdownEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountdownEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FADB93329881CD1001FDEAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FADB93529881CD1001FDEAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				1FADB93C29881CD3001FDEAD /* Assets.xcassets */,
 				1FADB93E29881CD3001FDEAD /* LaunchScreen.storyboard */,
 				1FADB94129881CD3001FDEAD /* Info.plist */,
+				1F8A55462988231C00E0460B /* AppCoordinator.swift */,
 			);
 			path = CountdownEvent;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F8A55472988231C00E0460B /* AppCoordinator.swift in Sources */,
 				1FADB93829881CD1001FDEAD /* ViewController.swift in Sources */,
 				1FADB93429881CD1001FDEAD /* AppDelegate.swift in Sources */,
 				1FADB93629881CD1001FDEAD /* SceneDelegate.swift in Sources */,
