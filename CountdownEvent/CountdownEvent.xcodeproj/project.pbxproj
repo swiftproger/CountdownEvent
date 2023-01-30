@@ -14,6 +14,7 @@
 		1F8A5557298855B600E0460B /* EventsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A5555298855B600E0460B /* EventsApp.xcdatamodeld */; };
 		1F8A555A298856BC00E0460B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A5559298856BC00E0460B /* CoreDataManager.swift */; };
 		1F8A555C29885DD500E0460B /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A555B29885DD500E0460B /* EventListViewModel.swift */; };
+		1F8A555F2988661E00E0460B /* AddEventCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A555E2988661E00E0460B /* AddEventCoordinator.swift */; };
 		1FADB93429881CD1001FDEAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FADB93329881CD1001FDEAD /* AppDelegate.swift */; };
 		1FADB93629881CD1001FDEAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FADB93529881CD1001FDEAD /* SceneDelegate.swift */; };
 		1FADB93B29881CD1001FDEAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FADB93929881CD1001FDEAD /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		1F8A5556298855B600E0460B /* EvetsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EvetsApp.xcdatamodel; sourceTree = "<group>"; };
 		1F8A5559298856BC00E0460B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		1F8A555B29885DD500E0460B /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
+		1F8A555E2988661E00E0460B /* AddEventCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventCoordinator.swift; sourceTree = "<group>"; };
 		1FADB93029881CD1001FDEAD /* CountdownEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountdownEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FADB93329881CD1001FDEAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FADB93529881CD1001FDEAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			children = (
 				1F8A55462988231C00E0460B /* AppCoordinator.swift */,
 				1F8A55482988267500E0460B /* EventListCoordinator.swift */,
+				1F8A555E2988661E00E0460B /* AddEventCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				1F8A554B2988272500E0460B /* EventListViewController.swift in Sources */,
 				1FADB93429881CD1001FDEAD /* AppDelegate.swift in Sources */,
 				1FADB93629881CD1001FDEAD /* SceneDelegate.swift in Sources */,
+				1F8A555F2988661E00E0460B /* AddEventCoordinator.swift in Sources */,
 				1F8A55492988267500E0460B /* EventListCoordinator.swift in Sources */,
 				1F8A555C29885DD500E0460B /* EventListViewModel.swift in Sources */,
 				1F8A555A298856BC00E0460B /* CoreDataManager.swift in Sources */,
