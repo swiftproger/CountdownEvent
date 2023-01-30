@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import CoreData
 
 class EventListViewController: UIViewController {
+    
+    private let coreDataManager = CoreDataManager()
 
     static func instantiate() -> EventListViewController {
         let soryboard = UIStoryboard(name: "Main", bundle: .main)
@@ -17,8 +20,12 @@ class EventListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-            
         setupViews()
+        
+        
+        coreDataManager.seveEvent(name: "Новый год", date: Date(), image: UIImage(systemName: "plus.circle.fill")!)
+        print(coreDataManager.fetchEvents())
+        
     }
     
     private func setupViews() {

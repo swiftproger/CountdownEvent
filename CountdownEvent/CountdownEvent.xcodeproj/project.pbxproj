@@ -11,6 +11,8 @@
 		1F8A55492988267500E0460B /* EventListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A55482988267500E0460B /* EventListCoordinator.swift */; };
 		1F8A554B2988272500E0460B /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A554A2988272500E0460B /* EventListViewController.swift */; };
 		1F8A554D29882C1F00E0460B /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A554C29882C1F00E0460B /* UIColor.swift */; };
+		1F8A5557298855B600E0460B /* EventsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A5555298855B600E0460B /* EventsApp.xcdatamodeld */; };
+		1F8A555A298856BC00E0460B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A5559298856BC00E0460B /* CoreDataManager.swift */; };
 		1FADB93429881CD1001FDEAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FADB93329881CD1001FDEAD /* AppDelegate.swift */; };
 		1FADB93629881CD1001FDEAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FADB93529881CD1001FDEAD /* SceneDelegate.swift */; };
 		1FADB93B29881CD1001FDEAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FADB93929881CD1001FDEAD /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 		1F8A55482988267500E0460B /* EventListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListCoordinator.swift; sourceTree = "<group>"; };
 		1F8A554A2988272500E0460B /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
 		1F8A554C29882C1F00E0460B /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		1F8A5556298855B600E0460B /* EvetsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EvetsApp.xcdatamodel; sourceTree = "<group>"; };
+		1F8A5559298856BC00E0460B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		1FADB93029881CD1001FDEAD /* CountdownEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountdownEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FADB93329881CD1001FDEAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FADB93529881CD1001FDEAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F8A554E298854DF00E0460B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1F8A554C29882C1F00E0460B /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1F8A554F298854F800E0460B /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				1F8A55462988231C00E0460B /* AppCoordinator.swift */,
+				1F8A55482988267500E0460B /* EventListCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		1F8A55502988550100E0460B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1F8A554A2988272500E0460B /* EventListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1F8A55512988552D00E0460B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1FADB93929881CD1001FDEAD /* Main.storyboard */,
+				1FADB93E29881CD3001FDEAD /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		1F8A55522988554900E0460B /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				1F8A55542988557400E0460B /* Assets */,
+				1F8A55532988556900E0460B /* Delegate */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		1F8A55532988556900E0460B /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				1FADB93329881CD1001FDEAD /* AppDelegate.swift */,
+				1FADB93529881CD1001FDEAD /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		1F8A55542988557400E0460B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				1FADB93C29881CD3001FDEAD /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		1FADB92729881CD1001FDEAD = {
 			isa = PBXGroup;
 			children = (
@@ -62,16 +126,14 @@
 		1FADB93229881CD1001FDEAD /* CountdownEvent */ = {
 			isa = PBXGroup;
 			children = (
-				1FADB93329881CD1001FDEAD /* AppDelegate.swift */,
-				1FADB93529881CD1001FDEAD /* SceneDelegate.swift */,
-				1FADB93929881CD1001FDEAD /* Main.storyboard */,
-				1FADB93C29881CD3001FDEAD /* Assets.xcassets */,
-				1FADB93E29881CD3001FDEAD /* LaunchScreen.storyboard */,
+				1F8A55522988554900E0460B /* Support */,
+				1F8A55512988552D00E0460B /* Storyboards */,
+				1F8A55502988550100E0460B /* Controllers */,
+				1F8A554F298854F800E0460B /* Coordinators */,
+				1F8A554E298854DF00E0460B /* Extensions */,
 				1FADB94129881CD3001FDEAD /* Info.plist */,
-				1F8A55462988231C00E0460B /* AppCoordinator.swift */,
-				1F8A55482988267500E0460B /* EventListCoordinator.swift */,
-				1F8A554A2988272500E0460B /* EventListViewController.swift */,
-				1F8A554C29882C1F00E0460B /* UIColor.swift */,
+				1F8A5555298855B600E0460B /* EventsApp.xcdatamodeld */,
+				1F8A5559298856BC00E0460B /* CoreDataManager.swift */,
 			);
 			path = CountdownEvent;
 			sourceTree = "<group>";
@@ -153,6 +215,8 @@
 				1FADB93429881CD1001FDEAD /* AppDelegate.swift in Sources */,
 				1FADB93629881CD1001FDEAD /* SceneDelegate.swift in Sources */,
 				1F8A55492988267500E0460B /* EventListCoordinator.swift in Sources */,
+				1F8A555A298856BC00E0460B /* CoreDataManager.swift in Sources */,
+				1F8A5557298855B600E0460B /* EventsApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +440,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1F8A5555298855B600E0460B /* EventsApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1F8A5556298855B600E0460B /* EvetsApp.xcdatamodel */,
+			);
+			currentVersion = 1F8A5556298855B600E0460B /* EvetsApp.xcdatamodel */;
+			path = EventsApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1FADB92829881CD1001FDEAD /* Project object */;
 }
