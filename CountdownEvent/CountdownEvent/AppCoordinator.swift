@@ -23,6 +23,13 @@ final class AppCoordinator: Coordinator {
     
     func start() {
         let navigationController = UINavigationController()
+        
+        let eventListCoordinator = EventListCoordinator(navigationController: navigationController)
+        
+        childCoordinator.append(eventListCoordinator)
+        
+        eventListCoordinator.start()
+        
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
     }
