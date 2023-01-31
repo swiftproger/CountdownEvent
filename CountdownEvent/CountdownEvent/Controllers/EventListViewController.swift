@@ -10,12 +10,6 @@ import UIKit
 class EventListViewController: UIViewController {
     
     var viewModel: EventListViewModel!
-
-    static func instantiate() -> EventListViewController {
-        let soryboard = UIStoryboard(name: "Main", bundle: .main)
-        let controller = soryboard.instantiateViewController(withIdentifier: "EventListViewController") as! EventListViewController
-        return controller
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
