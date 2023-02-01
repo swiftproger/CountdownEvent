@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F886B0D298A745C0033F4AE /* TitleSubtitleCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F886B0C298A745C0033F4AE /* TitleSubtitleCellViewModel.swift */; };
+		1F886B10298A74A00033F4AE /* TitleSubtitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F886B0F298A74A00033F4AE /* TitleSubtitleCell.swift */; };
 		1F8A55472988231C00E0460B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A55462988231C00E0460B /* AppCoordinator.swift */; };
 		1F8A55492988267500E0460B /* EventListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A55482988267500E0460B /* EventListCoordinator.swift */; };
 		1F8A554B2988272500E0460B /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A554A2988272500E0460B /* EventListViewController.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F886B0C298A745C0033F4AE /* TitleSubtitleCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitleCellViewModel.swift; sourceTree = "<group>"; };
+		1F886B0F298A74A00033F4AE /* TitleSubtitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitleCell.swift; sourceTree = "<group>"; };
 		1F8A55462988231C00E0460B /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		1F8A55482988267500E0460B /* EventListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListCoordinator.swift; sourceTree = "<group>"; };
 		1F8A554A2988272500E0460B /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +64,7 @@
 		1F886B09298A68A30033F4AE /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				1F886B0B298A744F0033F4AE /* Cell */,
 				1F8A555B29885DD500E0460B /* EventListViewModel.swift */,
 				1F8A556429886AE700E0460B /* AddEventViewModel.swift */,
 			);
@@ -72,6 +77,22 @@
 				1F8A5559298856BC00E0460B /* CoreDataManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		1F886B0B298A744F0033F4AE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1F886B0C298A745C0033F4AE /* TitleSubtitleCellViewModel.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1F886B0E298A748E0033F4AE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F886B0F298A74A00033F4AE /* TitleSubtitleCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		1F8A554E298854DF00E0460B /* Extensions */ = {
@@ -156,6 +177,7 @@
 		1FADB93229881CD1001FDEAD /* CountdownEvent */ = {
 			isa = PBXGroup;
 			children = (
+				1F886B0E298A748E0033F4AE /* Views */,
 				1F886B0A298A68F40033F4AE /* Managers */,
 				1F886B09298A68A30033F4AE /* ViewModel */,
 				1F8A55522988554900E0460B /* Support */,
@@ -240,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F886B0D298A745C0033F4AE /* TitleSubtitleCellViewModel.swift in Sources */,
 				1F8A55472988231C00E0460B /* AppCoordinator.swift in Sources */,
 				1F8A554D29882C1F00E0460B /* UIColor.swift in Sources */,
 				1F8A55632988699400E0460B /* UIViewController.swift in Sources */,
@@ -251,6 +274,7 @@
 				1F8A55492988267500E0460B /* EventListCoordinator.swift in Sources */,
 				1F8A5561298868D600E0460B /* AddEventViewController.swift in Sources */,
 				1F8A555C29885DD500E0460B /* EventListViewModel.swift in Sources */,
+				1F886B10298A74A00033F4AE /* TitleSubtitleCell.swift in Sources */,
 				1F8A555A298856BC00E0460B /* CoreDataManager.swift in Sources */,
 				1F8A5557298855B600E0460B /* EventsApp.xcdatamodeld in Sources */,
 			);
