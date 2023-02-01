@@ -23,8 +23,10 @@ final class AddEventViewModel {
     
     func viewDidLoad() {
         cells = [
-            .titleSubtitle(TitleSubtitleCellViewModel(title: "Событие", subtitle: "", placeholder: "Название события", type: .text)),
-            .titleSubtitle(TitleSubtitleCellViewModel(title: "Дата", subtitle: "", placeholder: "Добавьте дату", type: .date))
+            .titleSubtitle(TitleSubtitleCellViewModel(title: "Событие", subtitle: "", placeholder: "Название события", type: .text, onCellUpdate: {})),
+            .titleSubtitle(TitleSubtitleCellViewModel(title: "Дата", subtitle: "", placeholder: "Добавьте дату", type: .date, onCellUpdate: { [weak self] in
+                self?.onUpdate()
+            }))
         ]
         onUpdate()
     }

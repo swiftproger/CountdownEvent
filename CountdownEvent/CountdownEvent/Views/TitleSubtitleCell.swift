@@ -19,6 +19,9 @@ final class TitleSubtitleCell: UITableViewCell {
     lazy var doneButton: UIBarButtonItem = {
         UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(tappedDone))
     }()
+    
+    private var viewModel: TitleSubtitleCellViewModel?
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
@@ -28,6 +31,9 @@ final class TitleSubtitleCell: UITableViewCell {
     }
     
     func update(with viewModel: TitleSubtitleCellViewModel) {
+        
+        self.viewModel = viewModel
+        
         titleLabel.text = viewModel.title
         subtitleTextField.text = viewModel.subtitle
         subtitleTextField.placeholder = viewModel.placeholder
@@ -72,6 +78,6 @@ final class TitleSubtitleCell: UITableViewCell {
     
     @objc
     private func tappedDone() {
-        
+        viewModel?.update(datePickerView.date)
     }
 }
