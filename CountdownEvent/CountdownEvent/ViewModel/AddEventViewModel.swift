@@ -26,6 +26,9 @@ final class AddEventViewModel {
             .titleSubtitle(TitleSubtitleCellViewModel(title: "Событие", subtitle: "", placeholder: "Название события", type: .text, onCellUpdate: {})),
             .titleSubtitle(TitleSubtitleCellViewModel(title: "Дата", subtitle: "", placeholder: "Добавьте дату", type: .date, onCellUpdate: { [weak self] in
                 self?.onUpdate()
+            })),
+            .titleSubtitle(TitleSubtitleCellViewModel(title: "Изображение", subtitle: "", placeholder: "", type: .image, onCellUpdate: { [weak self] in
+                self?.onUpdate()
             }))
         ]
         onUpdate()
@@ -51,8 +54,8 @@ final class AddEventViewModel {
         switch cells[indexPath.row] {
         case .titleSubtitle(let titleSubtitlesCellViewModel):
             titleSubtitlesCellViewModel.update(subtitle)
-        case .titleImage:
-            break
+        case .titleImage: break
+            
         }
     }
 }
