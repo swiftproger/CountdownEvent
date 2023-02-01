@@ -14,6 +14,11 @@ final class TitleSubtitleCell: UITableViewCell {
     private let verticalStackView = UIStackView()
     private let constant: CGFloat = 15
     
+    private let datePickerView = UIDatePicker()
+    private let toolBar = UIToolbar(frame: .init(x: 0, y: 0, width: 100, height: 100))
+    lazy var doneButton: UIBarButtonItem = {
+        UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(tappedDone))
+    }()
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
@@ -26,6 +31,9 @@ final class TitleSubtitleCell: UITableViewCell {
         titleLabel.text = viewModel.title
         subtitleTextField.text = viewModel.subtitle
         subtitleTextField.placeholder = viewModel.placeholder
+        
+        subtitleTextField.inputView = viewModel.type == .text ? nil : datePickerView
+        subtitleTextField.inputAccessoryView = viewModel.type == .text ? nil : toolBar
     }
     
     private func setupViews() {
@@ -36,6 +44,10 @@ final class TitleSubtitleCell: UITableViewCell {
         [verticalStackView, titleLabel, subtitleTextField].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
         }
+        
+        toolBar.setItems([doneButton], animated: false)
+        datePickerView.preferredDatePickerStyle = .wheels
+        datePickerView.datePickerMode = .date
     }
  
     private func setupHierarchy() {
@@ -56,5 +68,10 @@ final class TitleSubtitleCell: UITableViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    @objc
+    private func tappedDone() {
+        
     }
 }
