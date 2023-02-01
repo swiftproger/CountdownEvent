@@ -10,7 +10,7 @@ import UIKit
 
 final class TitleSubtitleCell: UITableViewCell {
     private let titleLabel = UILabel()
-    private let subtitleTextField = UITextField()
+    let subtitleTextField = UITextField()
     private let verticalStackView = UIStackView()
     private let constant: CGFloat = 15
     
