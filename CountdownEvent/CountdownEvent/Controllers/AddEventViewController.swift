@@ -17,6 +17,7 @@ class AddEventViewController: UIViewController {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.register(TitleSubtitleCell.self, forCellReuseIdentifier: "TitleSubtitleCell")
+        tableView.tableFooterView = UIView()
         
         viewModel.onUpdate = {
             [weak self] in
@@ -24,11 +25,24 @@ class AddEventViewController: UIViewController {
         }
         
         viewModel.viewDidLoad()
+        
+        navigationItem.title = viewModel.title
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(tappedDone))
+        navigationController?.navigationBar.tintColor = .black
+        
+        //to force large titles
+        tableView.contentInsetAdjustmentBehavior = .never
+        tableView.setContentOffset(.init(x: 0, y: -1), animated: false)
     }
 
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         viewModel.viewDidDisappear()
+    }
+    
+    @objc private func tappedDone() {
+        viewModel.tappedDone()
     }
 }
 

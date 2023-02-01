@@ -9,6 +9,7 @@ import Foundation
 
 final class AddEventViewModel {
     
+    let title = "Добавить"
     var onUpdate: () -> Void = {}
     
     enum Cell {
@@ -38,5 +39,9 @@ final class AddEventViewModel {
     
     func cell(for indexPath: IndexPath) -> Cell {
         return cells[indexPath.row]
+    }
+    
+    func tappedDone() {
+        print("tappedDone")
     }
 }
