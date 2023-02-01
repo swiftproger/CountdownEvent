@@ -21,22 +21,21 @@ final class EventListCoordinator: Coordinator {
         let eventListViewModel = EventListViewModel()
         eventListViewModel.coordinator = self
         eventListViewController.viewModel = eventListViewModel
-        navigationController.setViewControllers([eventListViewController], animated: true)
+        navigationController.setViewControllers([eventListViewController], animated: false)
     }
     
     func startAddEvent() {
         let addEventCoordinator = AddEventCoordinator(navigationController: navigationController)
+        addEventCoordinator.parentCoordinator = self
         childCoordinators.append(addEventCoordinator)
         addEventCoordinator.start()
     }
     
-    func childDidFinish(childCoordinator: Coordinator) {
-        
-        if let index = childCoordinators.firstIndex(where: { coordinator -> Bool in
-            return childCoordinator === coordinator
+    func childDidFinish(_ childCoordinator: Coordinator) {
+        if let index = childCoordinators.firstIndex(where: { coordinator in
+            childCoordinator === coordinator
         }) {
             childCoordinators.remove(at: index)
         }
-        
     }
 }

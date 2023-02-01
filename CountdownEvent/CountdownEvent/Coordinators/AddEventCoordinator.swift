@@ -12,7 +12,7 @@ final class AddEventCoordinator: Coordinator {
     private(set) var childCoordinators: [Coordinator] = []
     private var navigationController: UINavigationController
     
-    var perentCoordinator: EventListCoordinator?
+    var parentCoordinator: EventListCoordinator?
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -21,11 +21,12 @@ final class AddEventCoordinator: Coordinator {
     func start() {
         let addEventController: AddEventViewController = .instantiate()
         let addEventViewModel = AddEventViewModel()
+        addEventViewModel.coordinator = self
         addEventController.viewModel = addEventViewModel
         navigationController.present(addEventController, animated: true)
     }
     
     func didFinishAddEvent() {
-        perentCoordinator?.childDidFinish(childCoordinator: self)
+        parentCoordinator?.childDidFinish(self)
     }
 }
