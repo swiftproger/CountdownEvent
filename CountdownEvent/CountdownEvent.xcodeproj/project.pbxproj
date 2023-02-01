@@ -57,6 +57,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F886B09298A68A30033F4AE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1F8A555B29885DD500E0460B /* EventListViewModel.swift */,
+				1F8A556429886AE700E0460B /* AddEventViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1F886B0A298A68F40033F4AE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1F8A5559298856BC00E0460B /* CoreDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		1F8A554E298854DF00E0460B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +156,8 @@
 		1FADB93229881CD1001FDEAD /* CountdownEvent */ = {
 			isa = PBXGroup;
 			children = (
+				1F886B0A298A68F40033F4AE /* Managers */,
+				1F886B09298A68A30033F4AE /* ViewModel */,
 				1F8A55522988554900E0460B /* Support */,
 				1F8A55512988552D00E0460B /* Storyboards */,
 				1F8A55502988550100E0460B /* Controllers */,
@@ -146,9 +165,6 @@
 				1F8A554E298854DF00E0460B /* Extensions */,
 				1FADB94129881CD3001FDEAD /* Info.plist */,
 				1F8A5555298855B600E0460B /* EventsApp.xcdatamodeld */,
-				1F8A5559298856BC00E0460B /* CoreDataManager.swift */,
-				1F8A555B29885DD500E0460B /* EventListViewModel.swift */,
-				1F8A556429886AE700E0460B /* AddEventViewModel.swift */,
 			);
 			path = CountdownEvent;
 			sourceTree = "<group>";
