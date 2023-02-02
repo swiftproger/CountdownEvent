@@ -32,6 +32,7 @@ final class EventListCoordinator: Coordinator {
     }
     
     func childDidFinish(_ childCoordinator: Coordinator) {
+        
         if let index = childCoordinators.firstIndex(where: { coordinator in
             childCoordinator === coordinator
         }) {
