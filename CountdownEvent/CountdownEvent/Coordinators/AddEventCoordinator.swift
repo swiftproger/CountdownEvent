@@ -31,4 +31,8 @@ final class AddEventCoordinator: Coordinator {
     func didFinishAddEvent() {
         parentCoordinator?.childDidFinish(self)
     }
+    
+    func showImagePicker() {
+        print("showImagePicker")
+    }
 }
