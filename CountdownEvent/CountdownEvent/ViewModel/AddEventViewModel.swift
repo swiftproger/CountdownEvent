@@ -63,7 +63,9 @@ final class AddEventViewModel {
         switch cells[indexPath.row] {
         case .titleSubtitle(let titleSubtitleCellViewModel):
             guard titleSubtitleCellViewModel.type == .image else { return }
-            coordinator?.showImagePicker()
+            coordinator?.showImagePicker { image in
+                
+            }
         case .titleImage:
             break
         }
