@@ -53,7 +53,6 @@ class AddEventViewController: UIViewController {
     }
     
     private func setupHierarchy() {}
-    
     private func setupLayout() {}
 }
 

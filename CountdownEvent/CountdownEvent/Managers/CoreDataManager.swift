@@ -9,16 +9,16 @@ import CoreData
 import UIKit
 
 final class CoreDataManager {
-    lazy var persistenContainer: NSPersistentContainer = {
-       let persistenContainer = NSPersistentContainer(name: "EventsApp")
-        persistenContainer.loadPersistentStores { _, error in
+    lazy var persistentContainer: NSPersistentContainer = {
+       let persistentContainer = NSPersistentContainer(name: "EventsApp")
+        persistentContainer.loadPersistentStores { _, error in
             print(error?.localizedDescription ?? "###")
         }
-        return persistenContainer
+        return persistentContainer
     }()
     
     var moc: NSManagedObjectContext {
-        persistenContainer.viewContext
+        persistentContainer.viewContext
     }
     
     func seveEvent(name: String, date: Date, image: UIImage) {
