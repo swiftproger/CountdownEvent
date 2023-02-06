@@ -27,6 +27,7 @@
 		1FADB93B29881CD1001FDEAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FADB93929881CD1001FDEAD /* Main.storyboard */; };
 		1FADB93D29881CD3001FDEAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FADB93C29881CD3001FDEAD /* Assets.xcassets */; };
 		1FADB94029881CD3001FDEAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FADB93E29881CD3001FDEAD /* LaunchScreen.storyboard */; };
+		1FB5AB712992F409007A98E9 /* EventCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB702992F409007A98E9 /* EventCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		1FADB93C29881CD3001FDEAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FADB93F29881CD3001FDEAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FADB94129881CD3001FDEAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FB5AB702992F409007A98E9 /* EventCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				1F886B0C298A745C0033F4AE /* TitleSubtitleCellViewModel.swift */,
+				1FB5AB702992F409007A98E9 /* EventCellViewModel.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				1F8A5561298868D600E0460B /* AddEventViewController.swift in Sources */,
 				1F8A555C29885DD500E0460B /* EventListViewModel.swift in Sources */,
 				1F886B12298BDEBD0033F4AE /* ImagePickerCoordinator.swift in Sources */,
+				1FB5AB712992F409007A98E9 /* EventCellViewModel.swift in Sources */,
 				1F886B14298BEC380033F4AE /* EventCellBuilder.swift in Sources */,
 				1F886B10298A74A00033F4AE /* TitleSubtitleCell.swift in Sources */,
 				1F8A555A298856BC00E0460B /* CoreDataManager.swift in Sources */,
