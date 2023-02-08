@@ -18,9 +18,20 @@ final class EventListViewModel {
     }
     
     private(set) var cells: [Cell] = []
+    private let coreDataManager: CoreDataManager
+    
+    init(coreDataManager: CoreDataManager = CoreDataManager.shared) {
+        self.coreDataManager = coreDataManager
+    }
     
     func viewDidLoad() {
-        cells = [.event(EventCellViewModel()), .event(EventCellViewModel())]
+        
+        let events = coreDataManager.fetchEvents()
+        
+        cells = events.map({ event in
+                .event(EventCellViewModel(event))
+        })
+        
         onUpdate()
     }
     

@@ -10,10 +10,7 @@ import UIKit
 
 final class EventCell: UITableViewCell {
     
-    private let yearLabel = UILabel()
-    private let monthLabel = UILabel()
-    private let weekLabel = UILabel()
-    private let dayLabel = UILabel()
+    private let timeRemainingLabels = [UILabel(), UILabel(), UILabel(), UILabel()]
     private let dateLabel = UILabel()
     
     private let eventNameLabel = UILabel()
@@ -33,20 +30,20 @@ final class EventCell: UITableViewCell {
     }
     
     private func setupViews() {
-        [yearLabel, monthLabel, weekLabel, dayLabel, dateLabel, eventNameLabel, backgroundImage, verticalStackView].forEach {
+        (timeRemainingLabels + [dateLabel, eventNameLabel, backgroundImage, verticalStackView]).forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
         }
         
-        [yearLabel, monthLabel, weekLabel, dayLabel, dateLabel].forEach {
+        timeRemainingLabels.forEach {
             $0.font = .systemFont(ofSize: 28, weight: .medium)
-//            $0.textColor = .white
+            $0.textColor = .white
         }
         
         dateLabel.font = .systemFont(ofSize: 22, weight: .medium)
-//        dateLabel.textColor = .white
+        dateLabel.textColor = .white
         
         eventNameLabel.font = .systemFont(ofSize: 34, weight: .bold)
-//        eventNameLabel.textColor = .white
+        eventNameLabel.textColor = .white
         
         verticalStackView.axis = .vertical
         verticalStackView.alignment = .trailing
@@ -57,10 +54,10 @@ final class EventCell: UITableViewCell {
         contentView.addSubview(verticalStackView)
         contentView.addSubview(eventNameLabel)
         
-        verticalStackView.addArrangedSubview(yearLabel)
-        verticalStackView.addArrangedSubview(monthLabel)
-        verticalStackView.addArrangedSubview(weekLabel)
-        verticalStackView.addArrangedSubview(dayLabel)
+        timeRemainingLabels.forEach { label in
+            verticalStackView.addArrangedSubview(label)
+        }
+        
         verticalStackView.addArrangedSubview(UIView())
         verticalStackView.addArrangedSubview(dateLabel)
     }
@@ -78,12 +75,14 @@ final class EventCell: UITableViewCell {
     }
     
     func update(with viewModel: EventCellViewModel) {
-        yearLabel.text = viewModel.yearText
-        monthLabel.text = viewModel.monthText
-        weekLabel.text = viewModel.weekText
-        dayLabel.text = viewModel.dayText
+        viewModel.timeRemainningStrings.enumerated().forEach {
+            timeRemainingLabels[$0.offset].text = $0.element
+        }
         dateLabel.text = viewModel.dateText
         eventNameLabel.text = viewModel.eventName
-        backgroundImage.image = viewModel.backgroundImage
+        
+        viewModel.loadImage { image in
+            self.backgroundImage.image = image
+        }
     }
 }
