@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class EventCell: UITableViewCell {
+final class EventCell: UITableViewCell {
     
     private let yearLabel = UILabel()
     private let monthLabel = UILabel()
@@ -23,6 +23,9 @@ class EventCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        setupViews()
+        setupHierarchy()
+        setupLayout()
     }
     
     required init?(coder: NSCoder) {
@@ -54,6 +57,18 @@ class EventCell: UITableViewCell {
     }
     
     private func setupLayout() {
-        
+        backgroundImage.pinToSuperviewEdges()
+        verticalStackView.pinToSuperviewEdges([.top, .right, .bottom], constant: 15)
+        eventNameLabel.pinToSuperviewEdges([.left, .bottom], constant: 15)
+    }
+    
+    func update(with viewModel: EventCellViewModel) {
+        yearLabel.text = viewModel.yearText
+        monthLabel.text = viewModel.monthText
+        weekLabel.text = viewModel.weekText
+        dayLabel.text = viewModel.dayText
+        dateLabel.text = viewModel.dateText
+        eventNameLabel.text = viewModel.eventName
+        backgroundImage.image = viewModel.backgroundImage
     }
 }
