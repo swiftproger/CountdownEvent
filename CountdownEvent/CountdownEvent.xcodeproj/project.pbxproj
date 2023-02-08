@@ -31,6 +31,7 @@
 		1FB5AB732992F603007A98E9 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB722992F603007A98E9 /* EventCell.swift */; };
 		1FB5AB7529938996007A98E9 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB7429938996007A98E9 /* UIView.swift */; };
 		1FB5AB7729939C98007A98E9 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB7629939C98007A98E9 /* Date.swift */; };
+		1FB5AB7A2993C9B4007A98E9 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB792993C9B4007A98E9 /* UIImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		1FB5AB722992F603007A98E9 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		1FB5AB7429938996007A98E9 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		1FB5AB7629939C98007A98E9 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		1FB5AB792993C9B4007A98E9 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,10 +114,11 @@
 		1F8A554E298854DF00E0460B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1FB5AB7629939C98007A98E9 /* Date.swift */,
 				1FB5AB7429938996007A98E9 /* UIView.swift */,
 				1F8A554C29882C1F00E0460B /* UIColor.swift */,
+				1FB5AB792993C9B4007A98E9 /* UIImage.swift */,
 				1F8A55622988699400E0460B /* UIViewController.swift */,
-				1FB5AB7629939C98007A98E9 /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FB5AB7529938996007A98E9 /* UIView.swift in Sources */,
+				1FB5AB7A2993C9B4007A98E9 /* UIImage.swift in Sources */,
 				1F886B0D298A745C0033F4AE /* TitleSubtitleCellViewModel.swift in Sources */,
 				1F8A55472988231C00E0460B /* AppCoordinator.swift in Sources */,
 				1F8A554D29882C1F00E0460B /* UIColor.swift in Sources */,
