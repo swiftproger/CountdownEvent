@@ -40,7 +40,7 @@ final class EventCell: UITableViewCell {
         [yearLabel, monthLabel, weekLabel, dayLabel, dateLabel].forEach {
             
             $0.font = .systemFont(ofSize: 22, weight: .medium)
-            $0.textColor = .white
+//            $0.textColor = .white
         }
         
         eventNameLabel.font = .systemFont(ofSize: 28, weight: .medium)
