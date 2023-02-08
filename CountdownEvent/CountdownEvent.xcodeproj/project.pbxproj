@@ -29,6 +29,7 @@
 		1FADB94029881CD3001FDEAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FADB93E29881CD3001FDEAD /* LaunchScreen.storyboard */; };
 		1FB5AB712992F409007A98E9 /* EventCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB702992F409007A98E9 /* EventCellViewModel.swift */; };
 		1FB5AB732992F603007A98E9 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB722992F603007A98E9 /* EventCell.swift */; };
+		1FB5AB7529938996007A98E9 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB7429938996007A98E9 /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		1FADB94129881CD3001FDEAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FB5AB702992F409007A98E9 /* EventCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCellViewModel.swift; sourceTree = "<group>"; };
 		1FB5AB722992F603007A98E9 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		1FB5AB7429938996007A98E9 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			children = (
 				1F8A554C29882C1F00E0460B /* UIColor.swift */,
 				1F8A55622988699400E0460B /* UIViewController.swift */,
+				1FB5AB7429938996007A98E9 /* UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FB5AB7529938996007A98E9 /* UIView.swift in Sources */,
 				1F886B0D298A745C0033F4AE /* TitleSubtitleCellViewModel.swift in Sources */,
 				1F8A55472988231C00E0460B /* AppCoordinator.swift in Sources */,
 				1F8A554D29882C1F00E0460B /* UIColor.swift in Sources */,
