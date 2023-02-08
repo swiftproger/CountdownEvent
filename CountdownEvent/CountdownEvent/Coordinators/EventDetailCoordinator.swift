@@ -7,16 +7,23 @@
 
 import Foundation
 import UIKit
+import CoreData
 
 final class EventDetailCoordinator: Coordinator {
     var childCoordinators: [Coordinator] = []
     private let navigationController: UINavigationController
+    private let eventID: NSManagedObjectID
     
-    init(navigationController: UINavigationController) {
-        self.navigationController = navigationController
+    init(
+        eventID: NSManagedObjectID,
+        navigationController: UINavigationController) {
+            self.eventID = eventID
+            self.navigationController = navigationController
     }
     
     func start() {
-        
+        let detailViewController: EventDetailViewController = .instantiate()
+        detailViewController.viewModel = EventDetailViewModel(eventID: eventID)
+        navigationController.pushViewController(detailViewController, animated: true)
     }
 }

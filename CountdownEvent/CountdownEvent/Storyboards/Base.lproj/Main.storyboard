@@ -12,7 +12,7 @@
         <!--Event List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="EventListViewController" id="BYZ-38-t0r" customClass="EventListViewController" customModule="CountdownEvent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EventListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="EventListViewController" customModule="CountdownEvent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,7 +42,7 @@
         <!--Add Event View Controller-->
         <scene sceneID="2yn-75-GYf">
             <objects>
-                <viewController storyboardIdentifier="AddEventViewController" id="nJb-Xo-bai" customClass="AddEventViewController" customModule="CountdownEvent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddEventViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nJb-Xo-bai" customClass="AddEventViewController" customModule="CountdownEvent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AoC-ip-ckV">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,6 +68,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZuD-YP-h0M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="981" y="-27"/>
+        </scene>
+        <!--Event Detail View Controller-->
+        <scene sceneID="gg0-fY-cX4">
+            <objects>
+                <viewController storyboardIdentifier="EventDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wA7-db-UZp" customClass="EventDetailViewController" customModule="CountdownEvent" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rCs-hC-uMy">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aCg-Xs-Y4v">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Cox-Th-r70"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aCg-Xs-Y4v" firstAttribute="leading" secondItem="rCs-hC-uMy" secondAttribute="leading" id="7s1-L6-MVI"/>
+                            <constraint firstAttribute="trailing" secondItem="aCg-Xs-Y4v" secondAttribute="trailing" id="lWU-Db-UBy"/>
+                            <constraint firstItem="aCg-Xs-Y4v" firstAttribute="top" secondItem="rCs-hC-uMy" secondAttribute="top" id="tOJ-EP-f8O"/>
+                            <constraint firstAttribute="bottom" secondItem="aCg-Xs-Y4v" secondAttribute="bottom" id="uUq-eB-7rB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="aCg-Xs-Y4v" id="2aN-Dq-9ML"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bKE-he-Ogi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1741" y="-27"/>
         </scene>
     </scenes>
     <resources>

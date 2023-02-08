@@ -7,23 +7,18 @@
 
 import UIKit
 
-class EventDetailViewController: UIViewController {
+final  class EventDetailViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
+    var viewModel: EventDetailViewModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        viewModel.onUpdate = { [weak self] in
+            self?.imageView.image = self?.viewModel.image
+        }
+        
+        viewModel.viewDidLoad()
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
