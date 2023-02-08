@@ -30,6 +30,7 @@
 		1FB5AB712992F409007A98E9 /* EventCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB702992F409007A98E9 /* EventCellViewModel.swift */; };
 		1FB5AB732992F603007A98E9 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB722992F603007A98E9 /* EventCell.swift */; };
 		1FB5AB7529938996007A98E9 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB7429938996007A98E9 /* UIView.swift */; };
+		1FB5AB7729939C98007A98E9 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB7629939C98007A98E9 /* Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		1FB5AB702992F409007A98E9 /* EventCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCellViewModel.swift; sourceTree = "<group>"; };
 		1FB5AB722992F603007A98E9 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		1FB5AB7429938996007A98E9 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		1FB5AB7629939C98007A98E9 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				1FB5AB7429938996007A98E9 /* UIView.swift */,
 				1F8A554C29882C1F00E0460B /* UIColor.swift */,
 				1F8A55622988699400E0460B /* UIViewController.swift */,
+				1FB5AB7629939C98007A98E9 /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				1F8A555C29885DD500E0460B /* EventListViewModel.swift in Sources */,
 				1F886B12298BDEBD0033F4AE /* ImagePickerCoordinator.swift in Sources */,
 				1FB5AB712992F409007A98E9 /* EventCellViewModel.swift in Sources */,
+				1FB5AB7729939C98007A98E9 /* Date.swift in Sources */,
 				1F886B14298BEC380033F4AE /* EventCellBuilder.swift in Sources */,
 				1F886B10298A74A00033F4AE /* TitleSubtitleCell.swift in Sources */,
 				1F8A555A298856BC00E0460B /* CoreDataManager.swift in Sources */,
