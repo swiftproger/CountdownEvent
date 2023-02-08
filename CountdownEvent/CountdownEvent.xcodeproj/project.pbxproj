@@ -110,9 +110,9 @@
 		1F8A554E298854DF00E0460B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1FB5AB7429938996007A98E9 /* UIView.swift */,
 				1F8A554C29882C1F00E0460B /* UIColor.swift */,
 				1F8A55622988699400E0460B /* UIViewController.swift */,
-				1FB5AB7429938996007A98E9 /* UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
