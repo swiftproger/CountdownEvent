@@ -38,26 +38,41 @@ final class EventCell: UITableViewCell {
         }
         
         [yearLabel, monthLabel, weekLabel, dayLabel, dateLabel].forEach {
-            
-            $0.font = .systemFont(ofSize: 22, weight: .medium)
+            $0.font = .systemFont(ofSize: 28, weight: .medium)
 //            $0.textColor = .white
         }
         
-        eventNameLabel.font = .systemFont(ofSize: 28, weight: .medium)
+        dateLabel.font = .systemFont(ofSize: 22, weight: .medium)
+//        dateLabel.textColor = .white
+        
+        eventNameLabel.font = .systemFont(ofSize: 34, weight: .bold)
+//        eventNameLabel.textColor = .white
+        
         verticalStackView.axis = .vertical
+        verticalStackView.alignment = .trailing
     }
     
     private func setupHierarchy() {
         contentView.addSubview(backgroundImage)
         contentView.addSubview(verticalStackView)
+        contentView.addSubview(eventNameLabel)
         
-        [yearLabel, monthLabel, weekLabel, dayLabel, dateLabel].forEach {
-            verticalStackView.addArrangedSubview($0)
-        }
+        verticalStackView.addArrangedSubview(yearLabel)
+        verticalStackView.addArrangedSubview(monthLabel)
+        verticalStackView.addArrangedSubview(weekLabel)
+        verticalStackView.addArrangedSubview(dayLabel)
+        verticalStackView.addArrangedSubview(UIView())
+        verticalStackView.addArrangedSubview(dateLabel)
     }
     
     private func setupLayout() {
-        backgroundImage.pinToSuperviewEdges()
+        backgroundImage.pinToSuperviewEdges([.left, .right, .top])
+        let bottomConstraint = backgroundImage.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
+        bottomConstraint.priority = .required - 1
+        bottomConstraint.isActive = true
+        
+        
+        backgroundImage.heightAnchor.constraint(equalToConstant: 250).isActive = true
         verticalStackView.pinToSuperviewEdges([.top, .right, .bottom], constant: 15)
         eventNameLabel.pinToSuperviewEdges([.left, .bottom], constant: 15)
     }
