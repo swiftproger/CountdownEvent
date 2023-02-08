@@ -32,7 +32,7 @@ final class AddEventViewModel {
         return dateFormatter
     }()
     
-    init(cellBuilder: EventCellBuilder, coreDateManager: CoreDataManager) {
+    init(cellBuilder: EventCellBuilder, coreDateManager: CoreDataManager = CoreDataManager.shared) {
         self.cellBuilder = cellBuilder
         self.coreDateManager = coreDateManager
     }

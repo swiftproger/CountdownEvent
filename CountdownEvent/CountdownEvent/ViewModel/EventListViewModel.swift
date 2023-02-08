@@ -25,13 +25,14 @@ final class EventListViewModel {
     }
     
     func viewDidLoad() {
-        
+       reload()
+    }
+    
+    func reload() {
         let events = coreDataManager.fetchEvents()
-        
         cells = events.map({ event in
                 .event(EventCellViewModel(event))
         })
-        
         onUpdate()
     }
     
