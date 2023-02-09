@@ -80,18 +80,24 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aCg-Xs-Y4v">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="110" placeholderIntrinsicHeight="200" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6Ym-Sb-TSu" customClass="TimeRemainingStackView" customModule="CountdownEvent" customModuleProvider="target">
+                                <rect key="frame" x="141.66666666666666" y="326" width="110" height="200"/>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Cox-Th-r70"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="aCg-Xs-Y4v" firstAttribute="leading" secondItem="rCs-hC-uMy" secondAttribute="leading" id="7s1-L6-MVI"/>
+                            <constraint firstItem="6Ym-Sb-TSu" firstAttribute="centerY" secondItem="rCs-hC-uMy" secondAttribute="centerY" id="c58-wz-gBq"/>
                             <constraint firstAttribute="trailing" secondItem="aCg-Xs-Y4v" secondAttribute="trailing" id="lWU-Db-UBy"/>
                             <constraint firstItem="aCg-Xs-Y4v" firstAttribute="top" secondItem="rCs-hC-uMy" secondAttribute="top" id="tOJ-EP-f8O"/>
                             <constraint firstAttribute="bottom" secondItem="aCg-Xs-Y4v" secondAttribute="bottom" id="uUq-eB-7rB"/>
+                            <constraint firstItem="6Ym-Sb-TSu" firstAttribute="centerX" secondItem="rCs-hC-uMy" secondAttribute="centerX" id="vZH-WP-2hI"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="aCg-Xs-Y4v" id="2aN-Dq-9ML"/>
+                        <outlet property="timeRemainingStackView" destination="6Ym-Sb-TSu" id="vAK-7i-Gjg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bKE-he-Ogi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

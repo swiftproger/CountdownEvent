@@ -15,6 +15,7 @@ final class TimeRemainingStackView: UIStackView {
             addArrangedSubview($0)
         }
         axis = .vertical
+        translatesAutoresizingMaskIntoConstraints = false
     }
     
     func update(with viewModel: TimeRemainingViewModel) {

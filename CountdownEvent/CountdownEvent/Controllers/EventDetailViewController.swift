@@ -12,11 +12,21 @@ final  class EventDetailViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     var viewModel: EventDetailViewModel!
     
+    @IBOutlet weak var timeRemainingStackView: TimeRemainingStackView! {
+        didSet {
+            timeRemainingStackView.setup()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         viewModel.onUpdate = { [weak self] in
-            self?.imageView.image = self?.viewModel.image
+            guard let self = self,
+                  let timeRemainingViewModel = self.viewModel.timeRemainingViewModel
+            else { return }
+            self.imageView.image = self.viewModel.image
+            self.timeRemainingStackView.update(with: timeRemainingViewModel)
         }
         
         viewModel.viewDidLoad()
