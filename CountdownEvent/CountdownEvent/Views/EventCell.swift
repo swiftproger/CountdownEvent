@@ -9,7 +9,6 @@ import Foundation
 import UIKit
 
 final class EventCell: UITableViewCell {
-    
     private let timeRemainingLabels = [UILabel(), UILabel(), UILabel(), UILabel()]
     private let dateLabel = UILabel()
     
