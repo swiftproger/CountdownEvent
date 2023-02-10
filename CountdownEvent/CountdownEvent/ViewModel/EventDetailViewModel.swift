@@ -13,8 +13,8 @@ final class EventDetailViewModel {
     private let coreDataManager: CoreDataManager
     private var event: Event?
     private let date = Date()
-    
     var onUpdate = {}
+    var coordinator: EventDetailCoordinator?
     
     var image: UIImage? {
         guard let imageData = event?.image else { return nil }
@@ -37,5 +37,9 @@ final class EventDetailViewModel {
     func viewDidLoad() {
         event = coreDataManager.getEvent(eventID)
         onUpdate()
+    }
+    
+    func viewDidDisappear() {
+        coordinator?.didFinish()
     }
 }

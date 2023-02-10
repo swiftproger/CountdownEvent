@@ -10,9 +10,8 @@ import CoreData
 
 final class EventListCoordinator: Coordinator {
     private(set) var childCoordinators: [Coordinator] = []
-    var onSaveEvent = {}
-    
     private let navigationController: UINavigationController
+    var onSaveEvent = {}
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -36,12 +35,12 @@ final class EventListCoordinator: Coordinator {
     
     func onSelect(_ id: NSManagedObjectID) {
         let eventDetailCoordinator = EventDetailCoordinator(eventID: id, navigationController: navigationController)
+        eventDetailCoordinator.parentCoordinator = self
         childCoordinators.append(eventDetailCoordinator)
         eventDetailCoordinator.start()
     }
     
     func childDidFinish(_ childCoordinator: Coordinator) {
-        
         if let index = childCoordinators.firstIndex(where: { coordinator in
             childCoordinator === coordinator
         }) {

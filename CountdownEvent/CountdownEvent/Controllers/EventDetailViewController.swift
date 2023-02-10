@@ -7,8 +7,8 @@
 
 import UIKit
 
-final  class EventDetailViewController: UIViewController {
-
+final class EventDetailViewController: UIViewController {
+    
     @IBOutlet weak var imageView: UIImageView!
     var viewModel: EventDetailViewModel!
     
@@ -30,5 +30,10 @@ final  class EventDetailViewController: UIViewController {
         }
         
         viewModel.viewDidLoad()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        viewModel.viewDidDisappear()
     }
 }
