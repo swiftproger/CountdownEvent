@@ -39,6 +39,7 @@
 		1FB5AB842993EA01007A98E9 /* TimeRemainingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB832993EA01007A98E9 /* TimeRemainingViewModel.swift */; };
 		1FB5AB8629962A44007A98E9 /* EditEventCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB8529962A44007A98E9 /* EditEventCoordinator.swift */; };
 		1FB5AB8829962F31007A98E9 /* EditEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB8729962F31007A98E9 /* EditEventViewController.swift */; };
+		1FB5AB8A2996323D007A98E9 /* EditEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB892996323D007A98E9 /* EditEventViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		1FB5AB832993EA01007A98E9 /* TimeRemainingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeRemainingViewModel.swift; sourceTree = "<group>"; };
 		1FB5AB8529962A44007A98E9 /* EditEventCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventCoordinator.swift; sourceTree = "<group>"; };
 		1FB5AB8729962F31007A98E9 /* EditEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventViewController.swift; sourceTree = "<group>"; };
+		1FB5AB892996323D007A98E9 /* EditEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				1F8A556429886AE700E0460B /* AddEventViewModel.swift */,
 				1FB5AB7F2993DD24007A98E9 /* EventDetailViewModel.swift */,
 				1FB5AB832993EA01007A98E9 /* TimeRemainingViewModel.swift */,
+				1FB5AB892996323D007A98E9 /* EditEventViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				1F886B12298BDEBD0033F4AE /* ImagePickerCoordinator.swift in Sources */,
 				1FB5AB712992F409007A98E9 /* EventCellViewModel.swift in Sources */,
 				1FB5AB842993EA01007A98E9 /* TimeRemainingViewModel.swift in Sources */,
+				1FB5AB8A2996323D007A98E9 /* EditEventViewModel.swift in Sources */,
 				1FB5AB802993DD24007A98E9 /* EventDetailViewModel.swift in Sources */,
 				1FB5AB7729939C98007A98E9 /* Date.swift in Sources */,
 				1F886B14298BEC380033F4AE /* EventCellBuilder.swift in Sources */,

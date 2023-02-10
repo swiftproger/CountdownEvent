@@ -21,11 +21,11 @@ final class EditEventCoordinator: Coordinator {
     }
     
     func start() {
-//        let editEventController: EditEventViewController = .instantiate()
-//        let editEventViewModel = EditEventViewModel(cellBuilder: EventCellBuilder())
-//        editEventViewModel.coordinator = self
-//        editEventController.viewModel = editEventViewModel
-//        navigationController.present(modalNavigationController, animated: true)
+        let editEventController: EditEventViewController = .instantiate()
+        let editEventViewModel = EditEventViewModel(cellBuilder: EventCellBuilder())
+        editEventViewModel.coordinator = self
+        editEventController.viewModel = editEventViewModel
+        navigationController.pushViewController(editEventController, animated: true)
         
     }
     
@@ -40,14 +40,13 @@ final class EditEventCoordinator: Coordinator {
     
     func showImagePicker(completion: @escaping (UIImage) -> Void) {
         self.completion = completion
-//        let imagePickerCoordinator = ImagePickerCoordinator(navigationController: modalNavigationController)
-//        imagePickerCoordinator.parentCoordinator = self
-//        childCoordinators.append(imagePickerCoordinator)
-//        imagePickerCoordinator.start()
-    }
-    
-    func didFinishPicking(_ image: UIImage) {
-        completion(image)
+        let imagePickerCoordinator = ImagePickerCoordinator(navigationController: navigationController)
+        imagePickerCoordinator.parentCoordinator = self
+        imagePickerCoordinator.onFinishPicking = { image in
+            completion(image)
+        }
+        childCoordinators.append(imagePickerCoordinator)
+        imagePickerCoordinator.start()
     }
     
     func childDidFinish(_ childCoordinator: Coordinator) {
