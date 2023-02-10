@@ -68,8 +68,8 @@ final class EditEventViewModel {
               let date = dateFormatter.date(from: dateString) else {
             return
         }
-        coreDateManager.seveEvent(name: name, date: date, image: image)
-        coordinator?.didFinishSaveEvent()
+        coreDateManager.updateEvent(event: event, name: name, date: date, image: image)
+        coordinator?.didFinishUpdateEvent()
     }
     
     func updateCell(indexPath: IndexPath, subtitle: String) {
