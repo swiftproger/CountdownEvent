@@ -48,6 +48,7 @@ final class EditEventCoordinator: Coordinator {
         imagePickerCoordinator.parentCoordinator = self
         imagePickerCoordinator.onFinishPicking = { image in
             completion(image)
+            self.navigationController.dismiss(animated: true)
         }
         childCoordinators.append(imagePickerCoordinator)
         imagePickerCoordinator.start()

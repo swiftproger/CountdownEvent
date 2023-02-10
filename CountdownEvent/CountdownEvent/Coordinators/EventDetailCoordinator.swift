@@ -48,4 +48,12 @@ final class EventDetailCoordinator: Coordinator {
         childCoordinators.append(editEventCoordinator)
         editEventCoordinator.start()
     }
+    
+    func childDidFinish(_ childCoordinator: Coordinator) {
+        if let index = childCoordinators.firstIndex(where: { coordinator in
+            childCoordinator === coordinator
+        }) {
+            childCoordinators.remove(at: index)
+        }
+    }
 }
