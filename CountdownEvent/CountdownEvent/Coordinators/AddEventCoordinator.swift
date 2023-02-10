@@ -37,7 +37,7 @@ final class AddEventCoordinator: Coordinator {
     }
     
     func didFinishSaveEvent() {
-        parentCoordinator?.onSaveEvent()
+        parentCoordinator?.onUpdateEvent()
         navigationController.dismiss(animated: true)
     }
     

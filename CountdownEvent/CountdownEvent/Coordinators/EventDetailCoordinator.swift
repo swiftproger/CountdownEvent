@@ -27,7 +27,10 @@ final class EventDetailCoordinator: Coordinator {
         let detailViewController: EventDetailViewController = .instantiate()
         let eventDetailViewModel = EventDetailViewModel(eventID: eventID)
         eventDetailViewModel.coordinator = self
-        onUpdateEvent = eventDetailViewModel.reload
+        onUpdateEvent = {
+            eventDetailViewModel.reload()
+            self.parentCoordinator?.onUpdateEvent()
+        }
         detailViewController.viewModel = eventDetailViewModel
         navigationController.pushViewController(detailViewController, animated: true)
     }
