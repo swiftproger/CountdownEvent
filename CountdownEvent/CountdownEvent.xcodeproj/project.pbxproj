@@ -40,6 +40,7 @@
 		1FB5AB8629962A44007A98E9 /* EditEventCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB8529962A44007A98E9 /* EditEventCoordinator.swift */; };
 		1FB5AB8829962F31007A98E9 /* EditEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB8729962F31007A98E9 /* EditEventViewController.swift */; };
 		1FB5AB8A2996323D007A98E9 /* EditEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB892996323D007A98E9 /* EditEventViewModel.swift */; };
+		1FB5AB8D29965B28007A98E9 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB8C29965B28007A98E9 /* EventService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		1FB5AB8529962A44007A98E9 /* EditEventCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventCoordinator.swift; sourceTree = "<group>"; };
 		1FB5AB8729962F31007A98E9 /* EditEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventViewController.swift; sourceTree = "<group>"; };
 		1FB5AB892996323D007A98E9 /* EditEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventViewModel.swift; sourceTree = "<group>"; };
+		1FB5AB8C29965B28007A98E9 /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +223,7 @@
 		1FADB93229881CD1001FDEAD /* CountdownEvent */ = {
 			isa = PBXGroup;
 			children = (
+				1FB5AB8B29965B0F007A98E9 /* Services */,
 				1F886B0E298A748E0033F4AE /* Views */,
 				1F886B0A298A68F40033F4AE /* Managers */,
 				1F886B09298A68A30033F4AE /* ViewModel */,
@@ -234,6 +237,14 @@
 				1F886B13298BEC380033F4AE /* EventCellBuilder.swift */,
 			);
 			path = CountdownEvent;
+			sourceTree = "<group>";
+		};
+		1FB5AB8B29965B0F007A98E9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1FB5AB8C29965B28007A98E9 /* EventService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +343,7 @@
 				1FB5AB842993EA01007A98E9 /* TimeRemainingViewModel.swift in Sources */,
 				1FB5AB8A2996323D007A98E9 /* EditEventViewModel.swift in Sources */,
 				1FB5AB802993DD24007A98E9 /* EventDetailViewModel.swift in Sources */,
+				1FB5AB8D29965B28007A98E9 /* EventService.swift in Sources */,
 				1FB5AB7729939C98007A98E9 /* Date.swift in Sources */,
 				1F886B14298BEC380033F4AE /* EventCellBuilder.swift in Sources */,
 				1F886B10298A74A00033F4AE /* TitleSubtitleCell.swift in Sources */,
