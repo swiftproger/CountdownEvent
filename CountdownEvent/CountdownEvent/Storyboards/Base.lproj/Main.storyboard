@@ -104,6 +104,36 @@
             </objects>
             <point key="canvasLocation" x="1741" y="-27"/>
         </scene>
+        <!--Edit Event View Controller-->
+        <scene sceneID="cJH-HV-Fjk">
+            <objects>
+                <viewController storyboardIdentifier="EditEventViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eE5-Qz-ydB" customClass="EditEventViewController" customModule="CountdownEvent" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="usZ-Qr-hCt">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ty9-ND-q3w">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vgn-UG-d5A"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vgn-UG-d5A" firstAttribute="trailing" secondItem="Ty9-ND-q3w" secondAttribute="trailing" id="NQn-t9-s2o"/>
+                            <constraint firstItem="Ty9-ND-q3w" firstAttribute="leading" secondItem="Vgn-UG-d5A" secondAttribute="leading" id="Xht-MU-bku"/>
+                            <constraint firstItem="Vgn-UG-d5A" firstAttribute="bottom" secondItem="Ty9-ND-q3w" secondAttribute="bottom" id="kZh-73-MoP"/>
+                            <constraint firstItem="Ty9-ND-q3w" firstAttribute="top" secondItem="Vgn-UG-d5A" secondAttribute="top" id="qnT-Re-xg4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Ty9-ND-q3w" id="Yyj-hy-FQI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gUQ-ek-TfT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2515" y="-27"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">

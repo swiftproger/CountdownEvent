@@ -38,6 +38,7 @@
 		1FB5AB822993E947007A98E9 /* TimeRemainingStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB812993E947007A98E9 /* TimeRemainingStackView.swift */; };
 		1FB5AB842993EA01007A98E9 /* TimeRemainingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB832993EA01007A98E9 /* TimeRemainingViewModel.swift */; };
 		1FB5AB8629962A44007A98E9 /* EditEventCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB8529962A44007A98E9 /* EditEventCoordinator.swift */; };
+		1FB5AB8829962F31007A98E9 /* EditEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB8729962F31007A98E9 /* EditEventViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		1FB5AB812993E947007A98E9 /* TimeRemainingStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeRemainingStackView.swift; sourceTree = "<group>"; };
 		1FB5AB832993EA01007A98E9 /* TimeRemainingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeRemainingViewModel.swift; sourceTree = "<group>"; };
 		1FB5AB8529962A44007A98E9 /* EditEventCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventCoordinator.swift; sourceTree = "<group>"; };
+		1FB5AB8729962F31007A98E9 /* EditEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				1F8A554A2988272500E0460B /* EventListViewController.swift */,
 				1F8A5560298868D600E0460B /* AddEventViewController.swift */,
 				1FB5AB7D2993DB9A007A98E9 /* EventDetailViewController.swift */,
+				1FB5AB8729962F31007A98E9 /* EditEventViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				1F8A55472988231C00E0460B /* AppCoordinator.swift in Sources */,
 				1F8A554D29882C1F00E0460B /* UIColor.swift in Sources */,
 				1FB5AB7E2993DB9A007A98E9 /* EventDetailViewController.swift in Sources */,
+				1FB5AB8829962F31007A98E9 /* EditEventViewController.swift in Sources */,
 				1F8A55632988699400E0460B /* UIViewController.swift in Sources */,
 				1F8A556529886AE700E0460B /* AddEventViewModel.swift in Sources */,
 				1FB5AB8629962A44007A98E9 /* EditEventCoordinator.swift in Sources */,
