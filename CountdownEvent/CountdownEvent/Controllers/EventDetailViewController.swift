@@ -29,9 +29,14 @@ final class EventDetailViewController: UIViewController {
             self.timeRemainingStackView.update(with: timeRemainingViewModel)
         }
         
-        navigationItem.rightBarButtonItem = .init(image: UIImage(systemName: "pencil"), style: .plain, target: self, action: #selector(viewModel.editButtonTapped))
+        navigationItem.rightBarButtonItem = .init(image: UIImage(systemName: "pencil"), style: .plain, target: self, action: #selector(editButtonTapped))
         
         viewModel.viewDidLoad()
+    }
+    
+    @objc
+    func editButtonTapped() {
+        viewModel.editButtonTapped()
     }
     
     override func viewDidDisappear(_ animated: Bool) {

@@ -5,6 +5,7 @@
 //  Created by Александр Новиков on 08.02.2023.
 //
 
+import Foundation
 import CoreData
 import UIKit
 
@@ -43,9 +44,8 @@ final class EventDetailViewModel {
         coordinator?.didFinish()
     }
     
-    @objc
     func editButtonTapped() {
-//        guard let event = event else { return }
-//        coordinator?.onEditEvent(event)
+        guard let event = event else { return }
+        coordinator?.onEditEvent(event)
     }
 }

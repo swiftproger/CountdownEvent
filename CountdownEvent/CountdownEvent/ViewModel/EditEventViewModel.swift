@@ -6,10 +6,11 @@
 //
 
 import Foundation
+import UIKit
 
 final class EditEventViewModel {
     
-    let title = "Добавить"
+    let title = "Редактировать"
     var onUpdate: () -> Void = {}
     
     enum Cell {
@@ -25,6 +26,7 @@ final class EditEventViewModel {
     private var backgroundImageCellViewModel: TitleSubtitleCellViewModel?
     private let cellBuilder: EventCellBuilder
     private let coreDateManager: CoreDataManager
+    private let event: Event
     
     lazy var dateFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()
@@ -32,7 +34,12 @@ final class EditEventViewModel {
         return dateFormatter
     }()
     
-    init(cellBuilder: EventCellBuilder, coreDateManager: CoreDataManager = CoreDataManager.shared) {
+    init(
+        event: Event,
+        cellBuilder: EventCellBuilder,
+        coreDateManager: CoreDataManager = CoreDataManager.shared
+    ) {
+        self.event = event
         self.cellBuilder = cellBuilder
         self.coreDateManager = coreDateManager
     }
@@ -114,5 +121,16 @@ private extension EditEventViewModel {
                 backgroundImageCellViewModel
             )
         ]
+        
+        guard
+            let name = event.name,
+            let date = event.date,
+            let imageData = event.image,
+            let image = UIImage(data: imageData)
+        else { return }
+        
+        nameCellViewModel.update(name)
+        dateCellViewModel.update(date)
+        backgroundImageCellViewModel.update(image)
     }
 }

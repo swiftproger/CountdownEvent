@@ -13,16 +13,20 @@ final class EditEventCoordinator: Coordinator {
     private(set) var childCoordinators: [Coordinator] = []
     private var navigationController: UINavigationController
     private var completion: (UIImage) -> Void = { _ in }
+    private let event: Event
     
     var parentCoordinator: EventListCoordinator?
     
-    init(navigationController: UINavigationController) {
+    init(event: Event,
+         navigationController: UINavigationController
+    ) {
+        self.event = event
         self.navigationController = navigationController
     }
     
     func start() {
         let editEventController: EditEventViewController = .instantiate()
-        let editEventViewModel = EditEventViewModel(cellBuilder: EventCellBuilder())
+        let editEventViewModel = EditEventViewModel(event: event, cellBuilder: EventCellBuilder())
         editEventViewModel.coordinator = self
         editEventController.viewModel = editEventViewModel
         navigationController.pushViewController(editEventController, animated: true)
