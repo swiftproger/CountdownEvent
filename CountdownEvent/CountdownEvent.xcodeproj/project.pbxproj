@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F886B0D298A745C0033F4AE /* TitleSubtitleCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F886B0C298A745C0033F4AE /* TitleSubtitleCellViewModel.swift */; };
+		1F886B10298A74A00033F4AE /* TitleSubtitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F886B0F298A74A00033F4AE /* TitleSubtitleCell.swift */; };
+		1F886B12298BDEBD0033F4AE /* ImagePickerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F886B11298BDEBD0033F4AE /* ImagePickerCoordinator.swift */; };
+		1F886B14298BEC380033F4AE /* EventCellBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F886B13298BEC380033F4AE /* EventCellBuilder.swift */; };
+		1F8A55472988231C00E0460B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A55462988231C00E0460B /* AppCoordinator.swift */; };
+		1F8A55492988267500E0460B /* EventListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A55482988267500E0460B /* EventListCoordinator.swift */; };
+		1F8A554B2988272500E0460B /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A554A2988272500E0460B /* EventListViewController.swift */; };
+		1F8A554D29882C1F00E0460B /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A554C29882C1F00E0460B /* UIColor.swift */; };
+		1F8A5557298855B600E0460B /* EventsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A5555298855B600E0460B /* EventsApp.xcdatamodeld */; };
+		1F8A555A298856BC00E0460B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A5559298856BC00E0460B /* CoreDataManager.swift */; };
+		1F8A555C29885DD500E0460B /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A555B29885DD500E0460B /* EventListViewModel.swift */; };
+		1F8A555F2988661E00E0460B /* AddEventCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A555E2988661E00E0460B /* AddEventCoordinator.swift */; };
+		1F8A5561298868D600E0460B /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A5560298868D600E0460B /* AddEventViewController.swift */; };
+		1F8A55632988699400E0460B /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A55622988699400E0460B /* UIViewController.swift */; };
+		1F8A556529886AE700E0460B /* AddEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A556429886AE700E0460B /* AddEventViewModel.swift */; };
+		1FADB93429881CD1001FDEAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FADB93329881CD1001FDEAD /* AppDelegate.swift */; };
+		1FADB93629881CD1001FDEAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FADB93529881CD1001FDEAD /* SceneDelegate.swift */; };
+		1FADB93B29881CD1001FDEAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FADB93929881CD1001FDEAD /* Main.storyboard */; };
+		1FADB93D29881CD3001FDEAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FADB93C29881CD3001FDEAD /* Assets.xcassets */; };
+		1FADB94029881CD3001FDEAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FADB93E29881CD3001FDEAD /* LaunchScreen.storyboard */; };
+		1FB5AB712992F409007A98E9 /* EventCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB702992F409007A98E9 /* EventCellViewModel.swift */; };
+		1FB5AB732992F603007A98E9 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB722992F603007A98E9 /* EventCell.swift */; };
+		1FB5AB7529938996007A98E9 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB7429938996007A98E9 /* UIView.swift */; };
+		1FB5AB7729939C98007A98E9 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB7629939C98007A98E9 /* Date.swift */; };
+		1FB5AB7A2993C9B4007A98E9 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB792993C9B4007A98E9 /* UIImage.swift */; };
+		1FB5AB7C2993D321007A98E9 /* EventDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB7B2993D321007A98E9 /* EventDetailCoordinator.swift */; };
+		1FB5AB7E2993DB9A007A98E9 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB7D2993DB9A007A98E9 /* EventDetailViewController.swift */; };
+		1FB5AB802993DD24007A98E9 /* EventDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB7F2993DD24007A98E9 /* EventDetailViewModel.swift */; };
+		1FB5AB822993E947007A98E9 /* TimeRemainingStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB812993E947007A98E9 /* TimeRemainingStackView.swift */; };
+		1FB5AB842993EA01007A98E9 /* TimeRemainingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB832993EA01007A98E9 /* TimeRemainingViewModel.swift */; };
+		1FB5AB8629962A44007A98E9 /* EditEventCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB8529962A44007A98E9 /* EditEventCoordinator.swift */; };
+		1FB5AB8829962F31007A98E9 /* EditEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB8729962F31007A98E9 /* EditEventViewController.swift */; };
+		1FB5AB8A2996323D007A98E9 /* EditEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB892996323D007A98E9 /* EditEventViewModel.swift */; };
+		1FB5AB8D29965B28007A98E9 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB5AB8C29965B28007A98E9 /* EventService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F886B0C298A745C0033F4AE /* TitleSubtitleCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitleCellViewModel.swift; sourceTree = "<group>"; };
+		1F886B0F298A74A00033F4AE /* TitleSubtitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitleCell.swift; sourceTree = "<group>"; };
+		1F886B11298BDEBD0033F4AE /* ImagePickerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerCoordinator.swift; sourceTree = "<group>"; };
+		1F886B13298BEC380033F4AE /* EventCellBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCellBuilder.swift; sourceTree = "<group>"; };
+		1F8A55462988231C00E0460B /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		1F8A55482988267500E0460B /* EventListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListCoordinator.swift; sourceTree = "<group>"; };
+		1F8A554A2988272500E0460B /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
+		1F8A554C29882C1F00E0460B /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		1F8A5556298855B600E0460B /* EvetsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EvetsApp.xcdatamodel; sourceTree = "<group>"; };
+		1F8A5559298856BC00E0460B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		1F8A555B29885DD500E0460B /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
+		1F8A555E2988661E00E0460B /* AddEventCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventCoordinator.swift; sourceTree = "<group>"; };
+		1F8A5560298868D600E0460B /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
+		1F8A55622988699400E0460B /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		1F8A556429886AE700E0460B /* AddEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewModel.swift; sourceTree = "<group>"; };
+		1FADB93029881CD1001FDEAD /* CountdownEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountdownEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FADB93329881CD1001FDEAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1FADB93529881CD1001FDEAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1FADB93A29881CD1001FDEAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1FADB93C29881CD3001FDEAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FADB93F29881CD3001FDEAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1FADB94129881CD3001FDEAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FB5AB702992F409007A98E9 /* EventCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCellViewModel.swift; sourceTree = "<group>"; };
+		1FB5AB722992F603007A98E9 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		1FB5AB7429938996007A98E9 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		1FB5AB7629939C98007A98E9 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		1FB5AB792993C9B4007A98E9 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		1FB5AB7B2993D321007A98E9 /* EventDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailCoordinator.swift; sourceTree = "<group>"; };
+		1FB5AB7D2993DB9A007A98E9 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
+		1FB5AB7F2993DD24007A98E9 /* EventDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewModel.swift; sourceTree = "<group>"; };
+		1FB5AB812993E947007A98E9 /* TimeRemainingStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeRemainingStackView.swift; sourceTree = "<group>"; };
+		1FB5AB832993EA01007A98E9 /* TimeRemainingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeRemainingViewModel.swift; sourceTree = "<group>"; };
+		1FB5AB8529962A44007A98E9 /* EditEventCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventCoordinator.swift; sourceTree = "<group>"; };
+		1FB5AB8729962F31007A98E9 /* EditEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventViewController.swift; sourceTree = "<group>"; };
+		1FB5AB892996323D007A98E9 /* EditEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventViewModel.swift; sourceTree = "<group>"; };
+		1FB5AB8C29965B28007A98E9 /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FADB92D29881CD1001FDEAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F886B09298A68A30033F4AE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1F886B0B298A744F0033F4AE /* Cell */,
+				1F8A555B29885DD500E0460B /* EventListViewModel.swift */,
+				1F8A556429886AE700E0460B /* AddEventViewModel.swift */,
+				1FB5AB7F2993DD24007A98E9 /* EventDetailViewModel.swift */,
+				1FB5AB832993EA01007A98E9 /* TimeRemainingViewModel.swift */,
+				1FB5AB892996323D007A98E9 /* EditEventViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1F886B0A298A68F40033F4AE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1F8A5559298856BC00E0460B /* CoreDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		1F886B0B298A744F0033F4AE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1F886B0C298A745C0033F4AE /* TitleSubtitleCellViewModel.swift */,
+				1FB5AB702992F409007A98E9 /* EventCellViewModel.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1F886B0E298A748E0033F4AE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F886B0F298A74A00033F4AE /* TitleSubtitleCell.swift */,
+				1FB5AB722992F603007A98E9 /* EventCell.swift */,
+				1FB5AB812993E947007A98E9 /* TimeRemainingStackView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1F8A554E298854DF00E0460B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1FB5AB7629939C98007A98E9 /* Date.swift */,
+				1FB5AB7429938996007A98E9 /* UIView.swift */,
+				1F8A554C29882C1F00E0460B /* UIColor.swift */,
+				1FB5AB792993C9B4007A98E9 /* UIImage.swift */,
+				1F8A55622988699400E0460B /* UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1F8A554F298854F800E0460B /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				1F8A55462988231C00E0460B /* AppCoordinator.swift */,
+				1F8A55482988267500E0460B /* EventListCoordinator.swift */,
+				1F8A555E2988661E00E0460B /* AddEventCoordinator.swift */,
+				1F886B11298BDEBD0033F4AE /* ImagePickerCoordinator.swift */,
+				1FB5AB7B2993D321007A98E9 /* EventDetailCoordinator.swift */,
+				1FB5AB8529962A44007A98E9 /* EditEventCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		1F8A55502988550100E0460B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1F8A554A2988272500E0460B /* EventListViewController.swift */,
+				1F8A5560298868D600E0460B /* AddEventViewController.swift */,
+				1FB5AB7D2993DB9A007A98E9 /* EventDetailViewController.swift */,
+				1FB5AB8729962F31007A98E9 /* EditEventViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1F8A55512988552D00E0460B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1FADB93929881CD1001FDEAD /* Main.storyboard */,
+				1FADB93E29881CD3001FDEAD /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		1F8A55522988554900E0460B /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				1F8A55542988557400E0460B /* Assets */,
+				1F8A55532988556900E0460B /* Delegate */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		1F8A55532988556900E0460B /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				1FADB93329881CD1001FDEAD /* AppDelegate.swift */,
+				1FADB93529881CD1001FDEAD /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		1F8A55542988557400E0460B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				1FADB93C29881CD3001FDEAD /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		1FADB92729881CD1001FDEAD = {
+			isa = PBXGroup;
+			children = (
+				1FADB93229881CD1001FDEAD /* CountdownEvent */,
+				1FADB93129881CD1001FDEAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FADB93129881CD1001FDEAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FADB93029881CD1001FDEAD /* CountdownEvent.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FADB93229881CD1001FDEAD /* CountdownEvent */ = {
+			isa = PBXGroup;
+			children = (
+				1FB5AB8B29965B0F007A98E9 /* Services */,
+				1F886B0E298A748E0033F4AE /* Views */,
+				1F886B0A298A68F40033F4AE /* Managers */,
+				1F886B09298A68A30033F4AE /* ViewModel */,
+				1F8A55522988554900E0460B /* Support */,
+				1F8A55512988552D00E0460B /* Storyboards */,
+				1F8A55502988550100E0460B /* Controllers */,
+				1F8A554F298854F800E0460B /* Coordinators */,
+				1F8A554E298854DF00E0460B /* Extensions */,
+				1FADB94129881CD3001FDEAD /* Info.plist */,
+				1F8A5555298855B600E0460B /* EventsApp.xcdatamodeld */,
+				1F886B13298BEC380033F4AE /* EventCellBuilder.swift */,
+			);
+			path = CountdownEvent;
+			sourceTree = "<group>";
+		};
+		1FB5AB8B29965B0F007A98E9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1FB5AB8C29965B28007A98E9 /* EventService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FADB92F29881CD1001FDEAD /* CountdownEvent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FADB94429881CD3001FDEAD /* Build configuration list for PBXNativeTarget "CountdownEvent" */;
+			buildPhases = (
+				1FADB92C29881CD1001FDEAD /* Sources */,
+				1FADB92D29881CD1001FDEAD /* Frameworks */,
+				1FADB92E29881CD1001FDEAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CountdownEvent;
+			productName = CountdownEvent;
+			productReference = 1FADB93029881CD1001FDEAD /* CountdownEvent.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FADB92829881CD1001FDEAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					1FADB92F29881CD1001FDEAD = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 1FADB92B29881CD1001FDEAD /* Build configuration list for PBXProject "CountdownEvent" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FADB92729881CD1001FDEAD;
+			productRefGroup = 1FADB93129881CD1001FDEAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FADB92F29881CD1001FDEAD /* CountdownEvent */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FADB92E29881CD1001FDEAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FADB94029881CD3001FDEAD /* LaunchScreen.storyboard in Resources */,
+				1FADB93D29881CD3001FDEAD /* Assets.xcassets in Resources */,
+				1FADB93B29881CD1001FDEAD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FADB92C29881CD1001FDEAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FB5AB7529938996007A98E9 /* UIView.swift in Sources */,
+				1FB5AB7A2993C9B4007A98E9 /* UIImage.swift in Sources */,
+				1F886B0D298A745C0033F4AE /* TitleSubtitleCellViewModel.swift in Sources */,
+				1FB5AB7C2993D321007A98E9 /* EventDetailCoordinator.swift in Sources */,
+				1F8A55472988231C00E0460B /* AppCoordinator.swift in Sources */,
+				1F8A554D29882C1F00E0460B /* UIColor.swift in Sources */,
+				1FB5AB7E2993DB9A007A98E9 /* EventDetailViewController.swift in Sources */,
+				1FB5AB8829962F31007A98E9 /* EditEventViewController.swift in Sources */,
+				1F8A55632988699400E0460B /* UIViewController.swift in Sources */,
+				1F8A556529886AE700E0460B /* AddEventViewModel.swift in Sources */,
+				1FB5AB8629962A44007A98E9 /* EditEventCoordinator.swift in Sources */,
+				1F8A554B2988272500E0460B /* EventListViewController.swift in Sources */,
+				1FADB93429881CD1001FDEAD /* AppDelegate.swift in Sources */,
+				1FADB93629881CD1001FDEAD /* SceneDelegate.swift in Sources */,
+				1FB5AB732992F603007A98E9 /* EventCell.swift in Sources */,
+				1FB5AB822993E947007A98E9 /* TimeRemainingStackView.swift in Sources */,
+				1F8A555F2988661E00E0460B /* AddEventCoordinator.swift in Sources */,
+				1F8A55492988267500E0460B /* EventListCoordinator.swift in Sources */,
+				1F8A5561298868D600E0460B /* AddEventViewController.swift in Sources */,
+				1F8A555C29885DD500E0460B /* EventListViewModel.swift in Sources */,
+				1F886B12298BDEBD0033F4AE /* ImagePickerCoordinator.swift in Sources */,
+				1FB5AB712992F409007A98E9 /* EventCellViewModel.swift in Sources */,
+				1FB5AB842993EA01007A98E9 /* TimeRemainingViewModel.swift in Sources */,
+				1FB5AB8A2996323D007A98E9 /* EditEventViewModel.swift in Sources */,
+				1FB5AB802993DD24007A98E9 /* EventDetailViewModel.swift in Sources */,
+				1FB5AB8D29965B28007A98E9 /* EventService.swift in Sources */,
+				1FB5AB7729939C98007A98E9 /* Date.swift in Sources */,
+				1F886B14298BEC380033F4AE /* EventCellBuilder.swift in Sources */,
+				1F886B10298A74A00033F4AE /* TitleSubtitleCell.swift in Sources */,
+				1F8A555A298856BC00E0460B /* CoreDataManager.swift in Sources */,
+				1F8A5557298855B600E0460B /* EventsApp.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1FADB93929881CD1001FDEAD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FADB93A29881CD1001FDEAD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1FADB93E29881CD3001FDEAD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FADB93F29881CD3001FDEAD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FADB94229881CD3001FDEAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1FADB94329881CD3001FDEAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1FADB94529881CD3001FDEAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4753JN47ZA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CountdownEvent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Countdown;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftapp.CountdownEvent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1FADB94629881CD3001FDEAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4753JN47ZA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CountdownEvent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Countdown;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftapp.CountdownEvent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FADB92B29881CD1001FDEAD /* Build configuration list for PBXProject "CountdownEvent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FADB94229881CD3001FDEAD /* Debug */,
+				1FADB94329881CD3001FDEAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FADB94429881CD3001FDEAD /* Build configuration list for PBXNativeTarget "CountdownEvent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FADB94529881CD3001FDEAD /* Debug */,
+				1FADB94629881CD3001FDEAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1F8A5555298855B600E0460B /* EventsApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1F8A5556298855B600E0460B /* EvetsApp.xcdatamodel */,
+			);
+			currentVersion = 1F8A5556298855B600E0460B /* EvetsApp.xcdatamodel */;
+			path = EventsApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1FADB92829881CD1001FDEAD /* Project object */;
+}
